@@ -9,13 +9,13 @@ Repository demonstrates unconventional http-usage
 
 ## Usage
 ### Call with netcat (or telnet)
-- Execute: `nc localhost 5000`
+Execute: `nc localhost 5000`
 - Request with custom `ABRAKADABRA` method:
-  ```http
+  ```
   ABRAKADABRA /abra HTTP/1.1
   ```
 - GET-request with body:
-  ```http
+  ```
   GET /getb HTTP/1.1
   Content-Type: application/x-www-form-urlencoded
   Content-Length: 21
@@ -23,18 +23,18 @@ Repository demonstrates unconventional http-usage
   title=Anime one love!
   ```
 - POST-request with query-parameters:
-  ```http
+  ```
   POST /postq?q=QueryExample&p=999 HTTP/1.1
   ```
 - Equivalent requests with different methods:
-  ```http
+  ```
   GET /?q=Query-Anime HTTP/1.1
   Content-Type: application/x-www-form-urlencoded
   Content-Length: 16
 
   title=Body-Anime
   ```
-  ```http
+  ```
   POST /?q=Query-Anime HTTP/1.1
   Content-Type: application/x-www-form-urlencoded
   Content-Length: 16
