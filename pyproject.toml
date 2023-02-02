@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "broken-http"
+version = "0.1.0"
+description = ""
+authors = ["Peskov Sergey <devpeskov@proton.me>"]
+readme = "README.md"
+packages = [{include = "http_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pynvim = "^0.4.3"
+isort = "^5.12.0"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
